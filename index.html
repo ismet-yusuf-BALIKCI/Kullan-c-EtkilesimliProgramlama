@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsmet Yusuf Balıkcı</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+            background-color: #ff8c73;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff6f61;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff6f61;
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        p {
+            color: #777;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>İsmet Yusuf Balıkcı</h1>
+        <nav>
+            <a href="#" onclick="scrollToContact()">Ana Sayfa</a>
+            <a href="#" onclick="scrollToContact()">Blog</a>
+            <a href="#" onclick="scrollToContact()">İletişim</a>
+        </nav>
+    </header>
+
+<div id="contact" class="container">
+    <h2>Blog</h2>
+    <p class="post-content">Merhaba! Ben İnönü Üniversitesi Yazılım Mühendisliği 2. sınıf öğrencisi İsmet Yusuf Balıkcı.</p>
+    <p class="post-content">Yazılıma olan tutkum ve merakım beni bu alana yönlendirdi ve her gün yeni şeyler öğrenmekten heyecan duyuyorum.</p>
+    <p class="post-content">Bilgisayar bilimleri, veri yapıları ve algoritmalar gibi konulara ilgi duyuyorum. Ayrıca, mobil uygulama geliştirme ve yapay zeka gibi yeni teknolojilere de meraklıyım.</p>
+    <h2>İletişim Bilgileri</h2>
+    <p>Telefon: 05*********</p>
+    <p>E-posta: <a href="mailto:balikciyusuf98@gmail.com" style="color: #ff6f61;">balikciyusuf98@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/yusuf_bklc_/" style="color: #ff6f61;">@yusuf_bklc_</a></p>
+</div>
+
+<footer>
+    <p>İsmet Yusuf Balıkcı</p>
+</footer>
+
+<script>
+    function scrollToContact() {
+        const contactSection = document.getElementById("contact");
+        contactSection.scrollIntoView({behavior: 'smooth'});
+    }
+</script>
+</body>
+</html>
