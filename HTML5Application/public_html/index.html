@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İsmet Yusuf Balıkcı</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            background-image: url("resim/Software-Innovation.jpeg");
+        }
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+            background-color: #ff8c73;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff6f61;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff6f61;
+            font-size: 32px;
+            margin-top: 40px;
+        }
+        p {
+            color: #777;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff6f61, #ff8c73);
+            box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        .top-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+
+        .top-nav li {
+            width: 100%;
+        }
+
+        .top-nav a {
+            display: block;
+            width: 80%;
+            padding: 15px;
+            margin: 10px auto;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .top-nav a:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+
+        body {
+            margin-left: 270px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+/* Ana kapsayıcı: Kartları içeren div */
+.projects-container {
+    width: 100%;
+    overflow-x: auto; /* Yatay kaydırma aç */
+    white-space: nowrap; /* Kartların alt alta gelmesini engelle */
+    padding: 10px;
+    scrollbar-width: thin; /* Firefox için kaydırma çubuğu */
+    scrollbar-color: #ff6f61 transparent;
+}
+
+/* Chrome & Safari için kaydırma çubuğunu özelleştirme */
+.projects-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+    background-color: #ff6f61;
+    border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Kartları yatay sıraya koyan kapsayıcı */
+.project-wrapper {
+    display: flex; /* Kartları yan yana hizala */
+    gap: 15px; /* Kartlar arasında boşluk bırak */
+}
+
+/* Kart tasarımı */
+.project-card {
+    width: 220px; /* Kart genişliği */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0; /* Kartların küçülmesini önle */
+    display: inline-block; /* Kartların alt alta gelmesini engelle */
+}
+
+/* Kart içindeki resim */
+.project-card img {
+    width: 100%; /* Resmi karta sığdır */
+    height: 120px;
+    object-fit: cover; /* Resmin bozulmasını engelle */
+    border-radius: 5px;
+}
+
+/* Başlık ve açıklamalar */
+.project-card h3 {
+    color: #ff6f61;
+    margin: 10px 0 5px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+        </nav>
+        <h1>İsmet Yusuf Balıkcı</h1>
+
+
+        <nav class="nav">
+            <a href="#" onclick="scrollToContact()">Ana Sayfa</a>
+            <a href="#" onclick="scrollToContact()">Blog</a>
+            <a href="#" onclick="scrollToContact()">İletişim</a>
+        </nav>
+    </header>
+
+<div id="contact" class="container">
+    <h2>Blog</h2>
+    <p class="post-content">Merhaba! Ben İnönü Üniversitesi Yazılım Mühendisliği 3. sınıf öğrencisi İsmet Yusuf Balıkcı.</p>
+    <p class="post-content">Yazılıma olan tutkum ve merakım beni bu alana yönlendirdi ve her gün yeni şeyler öğrenmekten heyecan duyuyorum.</p>
+    <p class="post-content">Bilgisayar bilimleri, veri yapıları ve algoritmalar gibi konulara ilgi duyuyorum. Ayrıca, mobil uygulama geliştirme ve yapay zeka gibi yeni teknolojilere de meraklıyım.</p>
+    <h2>Yapılan Çalışmalar</h2>
+    <div class="projects-container">
+        <div class="project-card">
+            <img src="resim/proje1.jpg" alt="Proje 1">
+                <h3>Proje 1</h3>
+                <p>Bu proje hakkında kısa açıklama.</p>
+        </div>
+        <div class="project-card">
+            <img src="resim/proje2.jpg" alt="Proje 2">
+                <h3>Proje 2</h3>
+                <p>Bu proje hakkında kısa açıklama.</p>
+        </div>
+        <div class="project-card">
+            <img src="resim/proje3.jpg" alt="Proje 3">
+                <h3>Proje 3</h3>
+                <p>Bu proje hakkında kısa açıklama.</p>
+        </div>
+    </div>
+
+    <h2>İletişim Bilgileri</h2>
+    <p>Telefon: 05*********</p>
+    <p>E-posta: <a href="mailto:balikciyusuf98@gmail.com" style="color: #ff6f61;">balikciyusuf98@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/yusuf_bklc_/" style="color: #ff6f61;">@yusuf_bklc_</a></p>
+</div>
+
+<footer>
+    <p>İsmet Yusuf Balıkcı</p>
+</footer>
+
+<script>
+    function scrollToContact() {
+        const contactSection = document.getElementById("contact");
+        contactSection.scrollIntoView({behavior: 'smooth'});
+    }
+</script>
+
+</body>
+</html>
